@@ -1,0 +1,12 @@
+{
+  "name": "WimWidgets/google-material-design-icons",
+  "description": "Google's Material Design Icons: Font Awesome style",
+  "authors": [
+    {
+      "name": "Wim Reckman",
+      "email": "wim@widgets.nl",
+      "role": "developer",
+      "homepage": "http://www.widgets.nl"
+    }
+  ]
+}
