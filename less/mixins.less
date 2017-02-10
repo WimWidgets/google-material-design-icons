@@ -1,0 +1,61 @@
+.gmdi-icon() {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: @gmdi-font-size-base;
+  display: inline-block;
+  line-height: @gmdi-line-height-base;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.gmdi-icon-rotate(@degrees, @rotation) {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=@{rotation})";
+  -webkit-transform: rotate(@degrees);
+  -ms-transform: rotate(@degrees);
+  transform: rotate(@degrees);
+}
+
+.gmdi-icon-flip(@horiz, @vert, @rotation) {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=@{rotation}, mirror=1)";
+  -webkit-transform: scale(@horiz, @vert);
+  -ms-transform: scale(@horiz, @vert);
+  transform: scale(@horiz, @vert);
+}
+
+.sr-only() {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+.sr-only-focusable() {
+  &:active,
+  &:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+  }
+}
